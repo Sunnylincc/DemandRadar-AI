@@ -1,0 +1,10 @@
+name = "demandradar-proxy"
+main = "worker/index.ts"
+compatibility_date = "2026-05-22"
+
+[vars]
+# Optional defaults; actual secrets should be stored via:
+# wrangler secret put OPENAI_API_KEY
+# wrangler secret put ANTHROPIC_API_KEY
+DEFAULT_OPENAI_MODEL = "gpt-4o-mini"
+DEFAULT_ANTHROPIC_MODEL = "claude-3-5-sonnet-latest"
